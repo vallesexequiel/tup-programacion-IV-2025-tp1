@@ -1,0 +1,68 @@
+### API de Tareas - Ejercicio 3
+### Base URL: http://localhost:3003
+
+### 1. Información de la API
+GET http://localhost:3003/
+
+### 2. Crear tarea pendiente
+POST http://localhost:3003/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Estudiar para el examen",
+    "completada": false
+}
+
+### 3. Crear tarea completada
+POST http://localhost:3003/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Hacer la compra",
+    "completada": true
+}
+
+### 4. Crear otra tarea pendiente
+POST http://localhost:3003/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Llamar al dentista",
+    "completada": false
+}
+
+### 5. Listar todas las tareas
+GET http://localhost:3003/tareas
+
+### 6. Obtener tarea específica (ID: 1)
+GET http://localhost:3003/tareas/1
+
+### 7. Filtrar tareas completadas
+GET http://localhost:3003/tareas?completada=true
+
+### 8. Filtrar tareas pendientes
+GET http://localhost:3003/tareas?completada=false
+
+### 9. Solo tareas completadas (endpoint específico)
+GET http://localhost:3003/tareas/completadas
+
+### 10. Solo tareas pendientes (endpoint específico)
+GET http://localhost:3003/tareas/pendientes
+
+### 11. Cambiar estado de tarea (toggle)
+PATCH http://localhost:3003/tareas/1/toggle
+
+### 12. Actualizar tarea (ID: 3)
+PUT http://localhost:3003/tareas/3
+Content-Type: application/json
+
+{
+    "nombre": "Llamar al dentista para cita",
+    "completada": true
+}
+
+### 13. Eliminar tarea (ID: 2)
+DELETE http://localhost:3003/tareas/2
+
+### 14. Listar todas después de cambios
+GET http://localhost:3003/tareas
