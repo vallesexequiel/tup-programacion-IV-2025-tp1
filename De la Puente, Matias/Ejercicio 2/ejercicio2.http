@@ -1,0 +1,62 @@
+### API de Alumnos - Ejercicio 2 
+### Base URL: http://localhost:3002
+
+### 1. Información de la API
+GET http://localhost:3002/
+
+### 2. Crear alumno Juan Pérez
+POST http://localhost:3002/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Juan Pérez",
+    "notas": [7, 8, 6]
+}
+
+### 3. Crear alumno María García
+POST http://localhost:3002/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "María García",
+    "notas": [9, 9, 8]
+}
+
+### 4. Crear alumno Carlos López
+POST http://localhost:3002/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Carlos López",
+    "notas": [4, 5, 3]
+}
+
+### 5. Listar todos los alumnos
+GET http://localhost:3002/alumnos
+
+### 6. Obtener alumno específico (ID: 1)
+GET http://localhost:3002/alumnos/1
+
+### 7. Filtrar alumnos promocionados
+GET http://localhost:3002/alumnos/estado/promocionado
+
+### 8. Filtrar alumnos aprobados
+GET http://localhost:3002/alumnos/estado/aprobado
+
+### 9. Filtrar alumnos reprobados
+GET http://localhost:3002/alumnos/estado/reprobado
+
+### 10. Actualizar alumno (ID: 1)
+PUT http://localhost:3002/alumnos/1
+Content-Type: application/json
+
+{
+    "nombre": "Juan Pérez",
+    "notas": [8, 9, 7]
+}
+
+### 11. Eliminar alumno (ID: 3)
+DELETE http://localhost:3002/alumnos/3
+
+### 12. Listar todos después de cambios
+GET http://localhost:3002/alumnos
