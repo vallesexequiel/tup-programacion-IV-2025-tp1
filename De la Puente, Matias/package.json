@@ -1,0 +1,21 @@
+{
+  "name": "tp1-programacion-iv",
+  "version": "1.0.0",
+  "description": "Trabajo Práctico 1 - Programación IV con ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "ejercicio1": "node Ejercicio1/ejercicio1.js",
+    "ejercicio2": "node Ejercicio2/ejercicio2.js",
+    "ejercicio3": "node Ejercicio3/ejercicio3.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "author": "valles matias exequiel",
+  "license": "ISC"
+}
