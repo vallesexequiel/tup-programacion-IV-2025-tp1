@@ -1,0 +1,44 @@
+### API de Rectángulos - Ejercicio 1
+### Base URL: http://localhost:3001
+
+### 1. Información de la API
+GET http://localhost:3001/
+
+### 2. Crear rectángulo (5x3)
+POST http://localhost:3001/rectangulos
+Content-Type: application/json
+
+{
+    "ancho": 5,
+    "alto": 3
+}
+
+### 3. Crear cuadrado (4x4)
+POST http://localhost:3001/rectangulos
+Content-Type: application/json
+
+{
+    "ancho": 4,
+    "alto": 4
+}
+
+### 4. Listar todos los rectángulos
+GET http://localhost:3001/rectangulos
+
+### 5. Obtener rectángulo específico (ID: 1)
+GET http://localhost:3001/rectangulos/1
+
+### 6. Actualizar rectángulo (ID: 1)
+PUT http://localhost:3001/rectangulos/1
+Content-Type: application/json
+
+{
+    "ancho": 6,
+    "alto": 4
+}
+
+### 7. Eliminar rectángulo (ID: 2)
+DELETE http://localhost:3001/rectangulos/2
+
+### 8. Listar todos después de cambios
+GET http://localhost:3001/rectangulos
